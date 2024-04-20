@@ -1,0 +1,44 @@
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1500px, );
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1430px, );
+$rfs-breakpoint: 1500px;
+// Color Palette
+$primary: #8AB445;
+$primaryLight: #F1F2E3;
+$secondary: #726659;
+$secondaryLight: #AAA096;
+$secondaryLight2: #E6DDD4;
+$lightTextColor: #E6DDD4;
+$lightGray: #F9F9F9;
+$darkGray: #343741;
+$bodyTextColor: #000;
+$placeholderColor: #AAA096;
+$black: #000;
+$dark: #000000;
+$textDark: #231F20;
+$borderColor: #E2E2E2;
+
+$box-shadow-md: 0 0 8px rgba($black, .2);
+
+$h1size: 30px;
+$h2size: 24px;
+$h3size: 20px;
+$h4size: 18px;
+$h5size: 16px;
+$bodyFontSize: 16px;
+$bodyLineHeight: 1.4;
+$bodyFontFamily: "Inter", sans-serif;
+$headingFont: "Inter", sans-serif;
+$enable-negative-margins: true;
+$grid-gutter-width: 30px;
+$breadcrumb-divider: none;
+$border-radius: 3px;
+$border-color: $borderColor;
+$list-group-border-color:$borderColor;
+$list-group-active-color: $primary;
+$list-group-active-bg: #F1F1F1;
+$list-group-active-border-color: $borderColor;
+$table-striped-bg: rgba($secondary, .08);
+$table-active-bg: #F1F1F1;
+$table-striped-order:even;
+$btn-disabled-opacity:.47;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1' d='m6 10 3 3 6-6'/></svg>");

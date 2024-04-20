@@ -1,0 +1,385 @@
+.booking-form{
+    max-width: 999px;   
+    border-radius: 40px;  
+    margin: auto;
+    @include media-breakpoint-up(xl){
+        background-color: $white;      
+    }
+    .ff-row{
+        > div{
+            &:first-child{            
+                .btn-control{
+                    border-radius: 40px 0 0 40px;
+                    border: 0 !important;
+                    @include media-breakpoint-down(xl){
+                        border-radius: 12px 12px 0 0;
+                    }
+                }
+            }
+            &:last-child{            
+                .btn-control{
+                    border-radius: 0 40px 40px 0;                  
+                }
+            }
+        }
+        .calendar-column{
+            @include media-breakpoint-up(xl){
+                width: 38%;
+                flex-grow: 1;
+            }
+        }
+        .guests-btn{
+            @include media-breakpoint-down(xl){
+                border-radius:  0 0 12px 12px;
+            }
+        }
+    }
+    .destination-btn{
+        min-width: 180px;
+    }
+    .guests-btn{
+        min-width: 140px;
+    }
+    .btn-control{
+        background-color: $white;
+        font-size: 15px;
+        letter-spacing: 0.02em; 
+        font-weight: normal;
+        color: $secondary !important;
+        padding: 0 15px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        border-radius: 0;
+        width: 100%;
+        box-shadow: none !important;
+        border: 0 !important;
+        @include media-breakpoint-up(xl){
+            border-left: 1px solid $secondaryLight !important;
+        }
+        @include media-breakpoint-down(xl){
+            border-top: 1px solid $secondaryLight !important;
+            &.btn-end-date{
+                border-left: 1px solid $secondaryLight !important;
+            }
+        }
+        @include media-breakpoint-down(sm){
+            font-size: 13px;
+        }
+        span{
+            padding-right: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 130px;
+            text-overflow: ellipsis;
+        }
+        [class*="icon-"]{
+            margin-left: auto;
+            font-size: 20px;
+        }
+    }
+    .dropdown-menu{
+        min-width: 200px;
+        @include media-breakpoint-down(xl){
+            width: 100%;
+        }
+    }
+    .submit-wrap{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        .btn{
+            border-radius: 12px; 
+            flex: 1 1 100%;      
+            @include media-breakpoint-up(xl){
+                width: 49px;
+                height: 49px;
+                flex: 0 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .btn-call-wrap{
+        .btn-control{
+            background-color: $secondaryLight2 !important;
+            color: $black !important;
+            white-space: nowrap;
+            font-size: 13px;
+            font-weight: 600;
+            padding:0 25px;
+            i{
+                padding-right: 11px;               
+            }
+        }
+    }
+
+
+}
+
+
+.booking-form-small{
+   .booking-form{
+      max-width: none;
+      margin-left: 0;
+      .ff-row{
+        .calendar-column{
+            @include media-breakpoint-up(xl){
+                width: 22%;
+            }
+        }
+      }
+      .btn-control{
+        height: 50px;
+      }
+      .submit-wrap{
+          .btn{
+            @include media-breakpoint-up(xl){
+                width: 38px;
+                height: 38px;
+            }
+          }
+      }
+
+
+    .btn-call-wrap{
+        .btn-control{
+            border: 1px solid $white !important;
+        }
+    }
+
+
+
+   }
+   
+}
+
+
+
+
+
+
+.dropdown-guests{
+    .dropdown-menu{
+        padding: 20px 15px;    
+        font-size: 13px;
+        color: $secondary;
+        min-width: 260px;    
+        @include media-breakpoint-down(xl){
+            width: 100%;
+        }
+        > ul{
+            > li{
+                padding: 10px 0;
+                width: 100%;
+                &:first-child{
+                    padding-top: 0;
+                }
+                + li{
+                    border-top: 1px solid $secondaryLight2;
+                }
+            }
+        }
+        
+         .guests-title{
+             line-height: 1.2;
+             strong{
+                 display: block;
+                 font-weight: 500;                
+             }
+             small{
+                 @include font-size(12px);
+                 color: #969696;
+             }
+         }
+    }
+
+    .open-guests {
+        .guests-dropdown{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+    
+    .clear-btn{
+        color: #B1B1B1 !important;   
+        border-bottom: 1px solid #b1b1b1;
+    }
+    
+    .close-dropdown{
+        color: $black !important;    
+        font-size: 16px;
+    }
+    
+    .dropdown-action{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: -5px;
+        a{
+            text-decoration: none;
+        }
+    }
+    
+    
+    .counter{
+        display: flex;    
+        align-items: center;
+        color: $black;
+        user-select: none;
+        .count-val{
+            display: block;
+            width: 40px;
+            padding: 0 5px;
+            text-align: center;
+            font-weight: normal;
+        }
+        .btn{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $secondary;
+            color: $secondary;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            letter-spacing: normal;
+            @include font-size(11px);
+            span{
+                line-height: normal;
+            }
+        }
+    }
+
+}
+
+.form-box{    
+    .btn-control{
+        padding: 22px;
+        text-align: left;
+        display: block;
+        width: 100%;
+        letter-spacing: normal;       
+        span{
+            display: block;
+            font-weight: normal;
+            font-size: 13px;
+            color: $secondary;
+        }
+    }
+    .calendar-column{
+        .row{
+            border-bottom: 1px solid $secondaryLight;
+            > div{
+                &:last-child{
+                    border-left: 1px solid $secondaryLight;
+                }
+            }
+        }
+    }
+    .submit-wrap{
+        padding: 0 15px;
+    }
+}
+
+
+
+
+
+
+
+/// calendar
+.datepicker__month-day:focus {    
+    background-color: $secondaryLight;
+}
+// .datepicker__month-day--no-checkin:before {
+//     border-bottom-color: red;
+// }
+// .datepicker__month-day--no-checkout:before{
+//     border-top-color: red;
+// }
+// .datepicker__month-day--invalid {
+//   color: #e8ebf4;
+// }
+  
+// .datepicker__month-day--disabled {
+//     color: #e8ebf4;   
+// }
+// .datepicker__month-day--disabled:after {
+//     color: red;
+// }
+// .datepicker__month-day--no-checkin,
+// .datepicker__month-day--no-checkout,
+// .datepicker__month-day--day-of-week-disabled {
+//   background-color: rgba(232, 235, 244, 0.5);
+// }
+
+.datepicker{
+    box-shadow: none;
+    font-family: inherit;
+    font-weight: 500;
+    @include media-breakpoint-down(xl){
+        width: 100% !important;
+        .datepicker__months{
+            display: flex;
+            width: auto;
+            .datepicker__month{
+                flex: 1 1 auto;
+            }
+        }
+    }
+}
+
+.datepicker__month-day--selected {
+    background-color: rgba($primary, 0.2);  
+    color: #000; 
+}
+.datepicker__month-day--hovering {
+    background-color: rgba($primary, 0.3); 
+    color: #000;  
+}
+.datepicker__month-day--today {
+    background-color: $secondary;   
+}
+.datepicker__month-day--first-day-selected,
+.datepicker__month-day--last-day-selected {
+  background-color: $primary;
+  color: #fff;
+}
+
+.datepicker__month-day--invalid {
+    color: #dfdfdf;
+}
+
+.datepicker__month-button--prev:after {
+    background-image: url(../images/left.svg);
+}
+  
+.datepicker__month-button--next:after {
+    background-image: url(../images/right.svg);
+}
+
+.datepicker__close-button,
+.datepicker__clear-button,
+.datepicker__submit-button {
+    background-color: $secondary;
+    &:hover{
+        background-color: darken($secondary, 10%);
+    }
+}
+.datepicker__tooltip {
+    background-color: $secondaryLight;
+}
+.datepicker__tooltip:after{
+    border-top-color: $secondaryLight;
+}
+
+.datepicker--topbar-bottom .datepicker__topbar{
+    white-space: normal;
+}
+

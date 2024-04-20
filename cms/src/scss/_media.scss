@@ -1,0 +1,113 @@
+@include media-breakpoint-down(xxl) {
+ 
+}
+
+@include media-breakpoint-down(xl) { 
+        .main{           
+            overflow-x: hidden;
+        }         
+        .user-btn{
+            &:after{
+                display: none;
+            }
+            .u-img{
+                margin-right: 0;
+            }
+            .u-name{
+                display: none;
+            }
+        }
+        .main-nav>ul>li>a{
+            padding-left: 15px;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            padding: 0;
+            top: 0;
+            bottom: 0;
+            padding: 0;
+            z-index: 9999;
+            width: 260px;
+            transform: translateX(-280px);
+            transition: all 0.3s;
+            .main-nav{
+                border-radius: 0;  
+            }
+        }
+
+        .menu-active{
+            .sidebar {
+                transform: none;
+            }
+        }
+
+
+
+}
+
+@include media-breakpoint-down(lg) {   
+    .vertical-tab {
+        width: 100%;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        overflow-x: auto;
+        padding: 0;
+        .list-group-item{
+            margin-top: 0 !important;
+            width: auto;
+            display: inline-block;
+            &:after{
+                content: "";
+                height: 2px;
+                width: 100%;
+                top: auto;
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+   
+}
+
+@include media-breakpoint-down(sm) {
+   
+    .sfTbl{
+        tr th:first-of-type, tr td:first-of-type{
+            padding-left: 10px !important;
+            font-size: 12px;
+        }    
+        .btn{
+            padding: 5px 0 5px 8px !important;
+        }
+        .btn .icon-arrow-down.small{
+            font-size: 36% !important;
+        }
+        .sfDetail{
+            background: #ffeeee;
+            padding: 5px 10px;
+            >.row{
+                padding:5px 0;
+                border-top:1px solid #ccc;
+                &:first-child{
+                    border: 0;
+                }
+            }        
+        }
+        .closingBalance, .openingBalance{
+            background:#def5f7; font-weight:bold; color:#000;
+        }
+        .priceInput{
+            width: 100px;
+        }
+    }
+}
+
+@media(max-width: 360px) {
+   
+}

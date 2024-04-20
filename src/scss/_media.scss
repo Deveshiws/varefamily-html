@@ -1,0 +1,192 @@
+
+@include media-breakpoint-down(xl) {   
+    .main-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 270px;
+        padding: 50px 0 !important;
+        min-height: 100vh;
+        background-color: $white !important;
+        justify-content: center;
+        flex-wrap: wrap;       
+        overflow: auto;
+        opacity: 0;
+        transform: translateX(-100%);
+        visibility: hidden;
+        box-shadow: 5px 0px 5px rgba($black, 0.1);
+        transition:all 0.3s;
+       > ul {
+            padding-right: 0;
+            > li {
+                flex: 1 1 100%;
+                > a {
+                    text-align: left;
+                    display: block;
+                    color: $black; 
+                    font-size: 18px;
+                    padding: 10px 20px;
+                }  
+
+            }
+        }
+    }
+
+    .menu-active {
+        .main-nav {           
+            visibility: visible;
+            opacity: 1;
+            transform:  translateX(0);
+        }
+    }
+
+
+    .section-hero{   
+        .hero-content{
+            padding-top: 40px;
+            flex: 1 1 auto;
+            .hero-title{
+                h1{
+                    @include font-size(40px);
+                    font-weight: 600; 
+                }           
+            }
+            .hero-body{
+                font-size: 14px;
+                color: $secondary;
+            }
+        }
+    }
+
+
+    .booking-form{
+        .ff-row{
+            background-color: $white;
+            border-radius: 12px;
+            box-shadow: 0 3px 6px rgba($black, 0.16);
+            margin-bottom: 1rem !important;
+            border: 1px solid rgba($secondaryLight2, 0.93);
+        }
+    }
+    
+
+.property-item{
+    .btn{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .key-features{
+        li{
+            font-size: 12px;
+        }
+    }
+}
+
+
+
+    
+
+}
+
+@include media-breakpoint-down(lg) {   
+    .collapsible-wrapper{          
+        h2{
+            color: $secondary;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+    .blog-swiper, .insta-swiper{
+        margin-right: calc(-0.5* var(--bs-gutter-x));
+        >.row{
+            flex-wrap: nowrap;
+        }
+    }
+    .invitations-content{
+        .tab-content{
+            text-align: center;
+        }
+    }
+    .insta-images{
+        overflow: visible;
+        .insta-image-inner {
+            min-width: auto!important;
+        }
+    } 
+    .team-slider{
+        overflow: visible;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .section-home-owner:not(.section-blog){
+        .home-owner-cards{
+            .card{
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80%;
+                    border: 1px solid $secondaryLight;
+                }
+                .card-body{
+                    padding-top: 1.5rem!important;
+                    padding-bottom: 1.5rem!important;
+                }
+            }
+            .row>div{
+                &+div{
+                    .card {
+                        .card-img-top{
+                            display: none;
+                        }
+                    }
+                }
+                &:last-child{
+                    .card{
+                        border: 0;
+                        &:before{
+                            content: none;
+                        }
+                        .card-body{
+                            padding-bottom: 0!important;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }  
+    .section-home-owner, .section-blog  {
+        .btn-wrap{
+            padding-top: 40px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .home-owner-cards{
+        .card-footer,.card-body{
+            padding-top: 0.75rem !important;
+        }
+    }
+    .collapsible-wrapper{   
+        margin: 0 -15px;        
+    }
+
+    .property-item{
+        .btn{
+           font-size: 11px;
+        }       
+    }
+
+
+
+}
+
+@media(max-width: 360px) {
+   
+}

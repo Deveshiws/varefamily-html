@@ -1,0 +1,36 @@
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1180px );
+
+// Color Palette
+$primary: #88B341;
+$primaryLight1:#94D626;
+$primaryLight: #F1F2E3;
+$secondary: #726659;
+$secondaryLight: #D8CCBF;
+$secondaryLight2: #F2E9DF;
+$secondaryLight3: #F7F2EC;
+
+$lightTextColor: #E6DDD4;
+$lightGray: #F9F9F9;
+$darkGray: #343741;
+$bodyTextColor: #000;
+$placeholderColor: #AAA096;
+$black: #000;
+$dark: #000000;
+$textDark: #545454;
+$borderColor: #E2E2E2;
+
+$box-shadow-md: 0 0 8px rgba($black, .2);
+$box-shadow: 0 3px 6px rgba($black, .16);
+
+$h1size: 30px;
+$h2size: 24px;
+$h3size: 20px;
+$h4size: 18px;
+$h5size: 16px;
+$bodyFontSize: 14px;
+$bodyLineHeight: 1.4;
+$bodyFontFamily: "Inter", sans-serif;
+$headingFont: "Source Serif 4", serif;
+$enable-negative-margins: true;
+$grid-gutter-width: 30px;

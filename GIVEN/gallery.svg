@@ -1,0 +1,13 @@
+<svg id="layout-grid-small" xmlns="http://www.w3.org/2000/svg" width="12.533" height="12.533" viewBox="0 0 12.533 12.533">
+  <g id="Group_116" data-name="Group 116">
+    <path id="Path_1275" data-name="Path 1275" d="M14,14h2.507v2.507H14Z" transform="translate(-14 -14)" fill="#f2e9df"/>
+    <path id="Path_1276" data-name="Path 1276" d="M22,14h2.507v2.507H22Z" transform="translate(-16.987 -14)" fill="#f2e9df"/>
+    <path id="Path_1277" data-name="Path 1277" d="M32.507,14H30v2.507h2.507Z" transform="translate(-19.974 -14)" fill="#f2e9df"/>
+    <path id="Path_1278" data-name="Path 1278" d="M14,22h2.507v2.507H14Z" transform="translate(-14 -16.987)" fill="#f2e9df"/>
+    <path id="Path_1279" data-name="Path 1279" d="M24.507,22H22v2.507h2.507Z" transform="translate(-16.987 -16.987)" fill="#f2e9df"/>
+    <path id="Path_1280" data-name="Path 1280" d="M30,22h2.507v2.507H30Z" transform="translate(-19.974 -16.987)" fill="#f2e9df"/>
+    <path id="Path_1281" data-name="Path 1281" d="M16.507,30H14v2.507h2.507Z" transform="translate(-14 -19.974)" fill="#f2e9df"/>
+    <path id="Path_1282" data-name="Path 1282" d="M22,30h2.507v2.507H22Z" transform="translate(-16.987 -19.974)" fill="#f2e9df"/>
+    <path id="Path_1283" data-name="Path 1283" d="M32.507,30H30v2.507h2.507Z" transform="translate(-19.974 -19.974)" fill="#f2e9df"/>
+  </g>
+</svg>
